@@ -1,0 +1,55 @@
+.bagger {
+    width: 1.875vw;
+    display: flex;
+    justify-content: center;
+    height: 36px;
+    cursor: pointer;
+}
+.bagger .bar {
+    width: 1px;
+    margin: 0 3px;
+    display: block;
+    border-left: 1px solid #eee;
+    transition: 0.5s;
+}
+
+.bagger.hide .bar {
+    transform: scale(1, 0);
+}
+
+.bagger .bar1 {
+    height: 18px;
+    align-self: flex-end;
+}
+
+.bagger.is-active .bar1 {
+    transform-origin: 50% 100%;
+    transform: translate(17px, -5px) rotate(-45deg) scale(1, 1.5);
+}
+
+.bagger .bar2 {
+    height: 36px;
+}
+
+.bagger.is-active .bar2 {
+    transform-origin: 50% 50%;
+    transform: scale(1, 0);
+}
+
+.bagger .bar3 {
+    height: 18px;
+    align-self: flex-start;
+}
+
+.bagger.is-active .bar3 {
+    transform-origin: 50% 0%;
+    transform: translate(2px, 12px) rotate(45deg) scale(1, 1.5);
+}
+
+.bagger-menu {
+    display: none;
+    transition: 0.5s;
+}
+.bagger-menu.is-active {
+    display: block;
+}

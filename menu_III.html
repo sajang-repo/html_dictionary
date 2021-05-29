@@ -4,51 +4,28 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>縦3本線 ハンバーガーメニュー</title>
+    <link rel="stylesheet" href="./css/reset.css">
+    <link rel="stylesheet" href="./css/menu_III.css">
 </head>
-<body>
+<body style="background-color: rgb(139, 138, 138);">
     <header>
-        <div class="bagger">
-            <span class="bar bar1"></span>
-            <span class="bar bar2"></span>
-            <span class="bar bar3"></span>
-        </div>
+        <nav>
+            <div class="bagger">
+                <span class="bar bar1"></span>
+                <span class="bar bar2"></span>
+                <span class="bar bar3"></span>
+            </div>
+            <div class="bagger-menu">
+                <ul>
+                    <li><a href="#">Menu 1</a></li>
+                    <li><a href="#">Menu 2</a></li>
+                    <li><a href="#">Menu 3</a></li>
+                </ul>
+            </div>
+        </nav>
     </header>
 
-    <style>
-        body {
-            background-color: #333;
-        }
-
-        .bagger {
-            width: 1.875vw;
-            display: flex;
-            justify-content: center;
-            height: 36px;
-            cursor: pointer;
-        }
-        .bagger .bar {
-            width: 1px;
-            margin: 0 3px;
-            display: block;
-            border-left: 1px solid #eee;
-        }
-
-        .bagger .bar1 {
-            height: 18px;
-            align-self: flex-end;
-        }
-
-        .bagger .bar2 {
-            height: 36px;
-        }
-
-        .bagger .bar3 {
-            height: 18px;
-            align-self: flex-start;
-        }
-
-
-    </style>
+    <script src="./js/menu_III.js"></script>
 </body>
 </html>
