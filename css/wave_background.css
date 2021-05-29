@@ -1,0 +1,29 @@
+.wave-bg {
+    overflow: hidden;
+    position: relative;
+    height: 797px;
+    background: linear-gradient(
+        rgba(16, 148, 230, .5), 
+        rgba(230, 234, 240, .5), 
+        rgba(165, 176, 234, .5)
+    ), url(../img/wave_background.jpg) no-repeat center center;
+    background-size: cover;
+    background-attachment: fixed;
+}
+.wrapper {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    transform: matrix(1, 0, 0, 1, 0, 0);
+}
+.wrapper-svg {
+    position: absolute;
+    bottom: 50%;
+    right: 50%;
+    -webkit-transform: translate3d(20%, 10%, 0) rotate(170deg);
+    transform: translate3d(20%, 10%, 0) rotate(170deg) scale(1, 0.55);
+    width: 200%;
+    height: 200%;
+}
